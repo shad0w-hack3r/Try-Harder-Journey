@@ -8,8 +8,8 @@ I have created this repository to keep a track of my OSCP journey. I am going to
 1. [Section 1](https://github.com/shad0w-hack3r/Try-Harder-Journey/tree/main/Getting%20Comfortable%20with%20Kali%20Linux) --> Getting Comfortable with Kali Linux
 2. [Section 2](https://github.com/shad0w-hack3r/Try-Harder-Journey/tree/main/Linux%20Command%20Line%20Kung%20Fu) --> Linux Command Line Kung-Fu
 3. [Section 3](https://github.com/shad0w-hack3r/Try-Harder-Journey/tree/main/Essential%20Tools%20in%20Kali) --> Essential Tools in Kali
-4. Section 4 --> Getting Started with Bash Scripting
-5. Section 5 --> Passive Reconnaissance
+4. [Section 4](https://github.com/shad0w-hack3r/Try-Harder-Journey/tree/main/Getting%20Started%20with%20Bash%20Scripting) --> Getting Started with Bash Scripting
+5. [Section 5](https://github.com/shad0w-hack3r/Try-Harder-Journey/tree/main/Passive%20Reconnaissance) --> Passive Reconnaissance
 6. Section 6 --> Active Reconnaissance
 7. Section 7 --> Vulnerability Scanning
 
