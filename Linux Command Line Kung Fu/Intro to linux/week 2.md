@@ -1,14 +1,13 @@
 # Week 2
 ---
 
-## Following topics covered in this section:
-## * History
-## * Philosophy
-## * Community
-## * Terminology
-## * Distribution
-## I have just covered the last two parts here.
-
+ The actual course contains following topics in this section:
+ * History
+ * Philosophy
+ * Community
+ * Terminology
+ * Distribution
+ I have just covered the last two parts here.
 
 Terminologies:
 ---
