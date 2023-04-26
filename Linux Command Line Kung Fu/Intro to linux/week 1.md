@@ -6,3 +6,5 @@
 3. Debian (Ubuntu & Linux Mint)
 
 ![Alt text](Linux%20Distributions.png)
+
+##### *Note: Week 1 & Week 2 are usually about the history of Linux, therefor I just skimmed through all the lectures online*
