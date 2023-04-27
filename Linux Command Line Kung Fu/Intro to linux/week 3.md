@@ -18,6 +18,7 @@ Below is the explanation of each step which is involved in boot process of an x8
    * This testing process is called as POST(Power On Self Test).
    * BIOS software is stored in ROM. After this process the remaining boot process is handeld by OS.
   <p align="center"><img src="Boot%20Process-BIOS.png" alt="" width="20%" height="40%"></p>
+  <p align="center">BIOS</p>
 
 2. Master Boot Record (MBR), EFI Partition and Boot Loader:
    * After successful POST completion, system control passes to the **boot loader**.
@@ -27,3 +28,8 @@ Below is the explanation of each step which is involved in boot process of an x8
        * GRUB
        * ISOLINUX --> (For booting from Removable Media)
        * DAS U-BOOT --> (For booting from embedded devices)
+   * When booting linux, the boot loader is responsible for loading the kernel image and initial RAM disk or filesystem into the memory.
+   * Initial RAM disk or filesystem contains some critical files and device drivers needed to start the system.
+  
+  <p align="center"><img src="BIOS%20vs%20UEFI.png" alt="" width="30%" height="10%"></p>
+  <p align="center">BIOS vs UEFI</p>
