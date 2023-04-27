@@ -35,3 +35,7 @@ Distribution:
 * All distributions come with a complete suite of applications already installed.
 
     ![Alt text](Distribution%20roles.png)
+* Organizations tend to choose commercially supported distributions e.g. from Red Hat, SUSE & Canonical (Ubuntu).
+* CentOS and CentOS stream are free alternatives of Red Hat Enterprise Linux. Small organizations who are comfortable without paid technical support tends to choose this distribution.
+* Ubuntu and Fedora are popular in developers and educational community.
+* All major distributors provide free update services for security and performance enhancements.
