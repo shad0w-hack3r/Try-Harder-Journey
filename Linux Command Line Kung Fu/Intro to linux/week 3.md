@@ -33,3 +33,25 @@ Below is the explanation of each step which is involved in boot process of an x8
   
   <p align="center"><img src="BIOS%20vs%20UEFI.png" alt="" width="30%" height="10%"></p>
   <p align="center">BIOS vs UEFI</p>
+
+3. Boot Loader in action:
+   The boot loader has 2 distinct stages. I will discuss these stages for both BIOS/MBR and EFI/UEFI systems below:
+   * BIOS/MBR Systems:
+      * The boot loader examines the **partition table** and looks for a bootable partition.
+      * Afterwards it searches for a second stage boot loader e.g. GRUB and loads it into RAM.
+      * The second stage boot loader resides under **/boot** directory.
+      * When this loads, it allows us to choose which OS and or kernel to boot.
+      * After OS or kernel is selected then boot loader loads it into RAM and passes control to it.
+    * EFI/UEFI Systems:
+      * UEFI firmware reads its Boot Manager Data to determine from which disk and partition EFI partition can be found.
+      * The firmware then launches the UEFI application, for example GRUB, as defined in the boot entry in the firmware's boot manager.
+      * Then the steps are same from there onwards.
+  
+  
+    Some interesting points to note here are:
+    * For systems using BIOS/MBR method, boot loader resides at the first sector of the hard disk, also known as MBR.
+    * Size of the MBR is 512 bytes.
+    * Kernels are almost always compressed, so when they are called by boot loader, they have to uncompress themselves first.
+
+4. Initial RAM Disk:
+   
