@@ -54,4 +54,13 @@ Below is the explanation of each step which is involved in boot process of an x8
     * Kernels are almost always compressed, so when they are called by boot loader, they have to uncompress themselves first.
 
 4. Initial RAM Disk:
-   
+    * The initramfs contain all the necessary files which are required by kernel to work properly.
+    * Also these files contain all the actions which are required to mount the correct root file system.
+    * It also contains all the necessary drivers which are required by the kernel.
+    * Therefor once the kernel is loaded it looks for initramfs and load it into the memory.
+    * Then initramfs provides the necessary tools and drivers to perform tasks such as detecting and configuring hardware devices, loading necessary kernel modules, and preparing the actual root filesystem for mounting.
+    * From here the **mount** program instructs the OS that file system is ready for use and associates it with overall heirarchy of file system **(mount point)**.
+    * If this mount is successful, **initramfs** gets cleared from the RAM and the **init** program from root file system is executed.
+    <p align="center"><img src="The%20Initial%20RAM%20Disk.png" alt="" width="30%" height="20%"></p>
+
+  
