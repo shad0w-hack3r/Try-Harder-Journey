@@ -94,3 +94,30 @@ Below is the explanation of each step which is involved in boot process of an x8
   > ` systemctl start|stop|restart|status name.service `
 
   # Linux File System:
+  Partition is a dedicated sub-section of a physical storage media. File system is just a method of storing and accessing files. 
+  <p align="center"><img src=FS%20Linux%20vs%20Windows.png alt="" width="50%" height="50%"></p>
+
+  Linux file system stores the important files based on a standard layout called as Filesystem Hierarchy Standard.
+  <p align="center"><img src=Linux%20FS%20Hierarchy.png alt="" width="50%" height="50%"></p>
+
+  # Choosing Linux Distribution:
+
+  Some questions worth thinking about before deciding on a distribution include:
+
+*  What is the main function of the system (server or desktop)?
+*  What types of packages are important to the organization? For example, web server, word processing, etc.
+*  How much storage space is required, and how much is available? For example, when installing Linux on an embedded device, space is usually constrained.
+*  How often are packages updated?
+*  How long is the support cycle for each release? For example, LTS releases have long-term support.
+*  Do you need kernel customization from the vendor or a third party?
+*  What hardware are you running on? For example, it might be X86, RISC-V, ARM, PPC, etc.
+*  Do you need long-term stability? Or can you accept (or need) a more volatile cutting-edge system running the latest software versions?
+
+  <p align="center"><img src=Choosing%20Linux%20distribution.png alt="" width="40%" height="400%"></p>
+  
+Some distributions will install some advanced security features by default. Such as:
+* root account is disabled by default --> Fedora, Ubuntu e.t.c.
+* SELinux is installed by default in Fedora and CentOS.
+* Ubuntu comes up with AppArmor installed by default.
+
+  
