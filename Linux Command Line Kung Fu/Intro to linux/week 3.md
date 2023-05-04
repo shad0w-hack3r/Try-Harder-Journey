@@ -63,4 +63,34 @@ Below is the explanation of each step which is involved in boot process of an x8
     * If this mount is successful, **initramfs** gets cleared from the RAM and the **init** program from root file system is executed.
     <p align="center"><img src="The%20Initial%20RAM%20Disk.png" alt="" width="30%" height="20%"></p>
 
+  5. The Kernal:  
+    * As discussed earlier, boot loader loads both, initramfs and kernel into the memory.  
+    * Once the kernel is loaded into the memory, it immediately performs:
+      * Computer Memory initialization and configuration.
+      * Configuration of all the attached hardware e.g I/O subsystems, processors and storage devices e.t.c.
+  6. /sbin/init and Services:  
+    * After setting up all the hardware and root filesystem mounting, now kernel runs **/sbin/init** process.
+    * This is becomes the initial process, which then starts other processes to get them running.
+    * Most other processes trace their origin ultimately to **init**.
+    * **init** process is responsible for keeping the system running and for shutting it down cleanly.
+    * It acts as a manager for all non-kernel processes. It cleans up after them upon completion.
+  <p align="center"><img src="init%20&%20services.png" alt="" width="20%" height="30%"></p>
   
+  # The Boot Process Explained in above steps is an old boot process also known as Serial Process (SysVinit)  
+  In this process the system had to pass through a sequence of **runlevels** containing collection of scripts to start and stop services. However all major distributions have now adopted a new method called as **systemd**.
+  Why this sequential process has changed?
+  Because each stage required completion of its previous stage to proceed further. Thus this startup did not take advantage of ***parallel processing*** that could be done with multiple processors.  
+  Following two alternatives were developed:
+     * Upstart --> developed by ubuntu and adopted by RHEL 6 and fedora 9 in 2006
+     * systemd --> Adopted by fedora first and then it replaced upstart in RHEL and ubuntu as well
+  
+  <p align="center"><img src=systemd.png alt="" width="30%" height="30%"></p>
+
+  Systemd vs init startup process:
+  * Systems using systemd are faster as compared with those, using init. Why? Because these systems now utilize the true power of parallelization techniques which allow multiple services to be run simultaneously.
+  * Complicated startup scripts present in init are now replaced with simpler configuration files.
+  * **/sbin/init** now refers to **/lib/systemd/systemd**.
+  * One simple systemd command **"systemctl"** is use to start, stop or check the status of the service.  
+  > ` systemctl start|stop|restart|status name.service `
+
+  # Linux File System:
