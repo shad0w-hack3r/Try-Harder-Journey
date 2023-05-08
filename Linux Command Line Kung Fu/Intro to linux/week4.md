@@ -11,4 +11,6 @@ This section discusses briefly about the graphical user interface of Linux syste
   <p align="center"><img src=Display%20Manager.png alt="" width="30%" height="30%"></p>
 
 * Basic settings are easily accessible to users but to perform advanced settings users can utilize a utility called as **gnome-tweaks**, which exposes many more settings option.
-* 
+  > **nautilus** command is use to open File manager directly from terminal.
+* To find the recently modified file in /var/log directory we can use following command:
+  > `ls -al /var/log/ | sort -M`
